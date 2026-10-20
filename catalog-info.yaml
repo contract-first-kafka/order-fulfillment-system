@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: order-fulfillment
+  title: order-fulfillment
+  description: Order fulfillment system coordinating order acceptance, inventory reservation, payment, and shipment through events.
+  annotations:
+    contract-first-idp.github.io/scm-provider: github
+    contract-first-idp.github.io/scm-host: github.com
+    contract-first-idp.github.io/domain-org: contract-first-kafka
+    contract-first-idp.github.io/domain-repo: demo-domain
+    contract-first-idp.github.io/repository-name: order-fulfillment-system
+spec:
+  owner: group:default/domain-maintainers
+  domain: domain:default/demo
+  groupId: io.github.contractfirstkafka.demo.orderfulfillment
